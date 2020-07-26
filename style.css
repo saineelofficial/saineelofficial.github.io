@@ -1,0 +1,114 @@
+body
+{
+    
+    background-image: url(https://images.unsplash.com/photo-1528459458967-d78e2fd34a9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    width: 100%;
+   
+
+}
+.navbar-brand
+{
+    font-size: 25px;
+    text-shadow: 6px 5px 8px rgb(0,0,0,0.6);
+}
+.navbar-nav a
+{
+    font-size: 20px;
+    margin-right:10px;
+}
+.image img
+{
+border-radius: 50%;
+margin-left: -20px;
+}
+.col img
+{
+    box-shadow: 0px 7px 10px rgb(0,0,0,0.6);
+}
+.line
+{
+    border-top: 1px solid rgb(184, 184, 184);
+}
+.card
+{
+    height:100px;
+    width:100px;
+    border:0px;
+}
+.card img
+{
+    height:100px;
+    width:100px;
+}
+ul
+{
+    display: flex;
+    justify-content: center;
+    
+    flex-flow: column;
+    letter-spacing: 1px;
+    list-style-type: disc;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.3em;
+    
+}
+h3
+{
+    font-family: 'Acme', sans-serif;
+    font-size:42px;
+    
+}
+li
+{
+    margin-bottom: 13px;
+}
+.nav-link a:hover
+{
+    color: red;
+}
+h5
+{
+    font-size:15px;
+}
+#project-info li
+{
+    margin-bottom: 0;
+    
+    font-size: 18px;
+    font-weight: 450;
+}
+.font
+{
+    font-size:19px;
+}
+.contact
+{
+    text-align: center;
+    font-size: 27px;
+
+}
+
+#button
+{
+    position: fixed;
+    right:10px;
+    bottom:10px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background: #e62739;
+    box-shadow: 0 3px 10px rgb(0,0,0.25);
+    border:none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+#button:active
+{
+    background: #cc2333;
+}
+
+
+
+
+
