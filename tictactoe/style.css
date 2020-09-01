@@ -1,0 +1,78 @@
+body
+{
+    height:100vh;
+    background: lightgrey;
+    object-fit: cover;
+    text-align: center;
+}  
+.container {
+    margin:auto;
+    height:460px;
+    width:454px;
+    
+}  
+h2
+{
+    font-family: 'Londrina Solid', cursive;
+    font-size:6em;
+    text-align: center;
+    margin-top:-5px;
+}
+ 
+.row
+{
+    height:130px;
+    width:447px;
+   
+}
+.border-b{
+    border-bottom:10px solid black;
+    
+    
+}
+.border-r
+{
+    border-right:9px solid black;
+    height:130px;
+   
+}
+.col
+{   
+    display: inline-block;
+    left:-2px;
+    float: left;
+    cursor: pointer;
+    height:130px;
+    width:143px;
+    font-size:100px;
+}
+.col:hover
+{
+    background-color: rgba(0,0,0.2,0.2);
+}
+.pass
+{
+    background-color: rgb(232, 84, 84);
+}
+.btn
+{   text-decoration: none;
+    color:black;
+    margin-bottom: 15px;
+    padding:10px 30px;
+    
+    font-size:20px;
+    background-color:#1E90FF;
+    border:none;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgb(69, 70, 71),
+                0px 3px 4px rgb(69, 70, 71);
+}
+.btn:hover, .btn:focus, .btn:active
+{
+    transform: scale(1.1);
+    background-color:rgb(27, 124, 227);
+    box-shadow: 0px 2px 5px rgb(27, 124, 227),
+                0px 3px 4px rgb(27, 124, 227);
+}
