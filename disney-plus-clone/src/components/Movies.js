@@ -6,14 +6,15 @@ import { useSelector } from 'react-redux'
 function Movies() {
 
     const movies = useSelector(selectMovies);
-
     return (
+
         <Container>
             <h4>Recommanded for You</h4>
             <Content>
                { 
                    movies && 
                     movies.map((movie)=>(
+                                                
                         <Wrap>
                             <Link to={`/detail/${movie.id}`}>
                                 <img src={movie.cardImg} alt='' />
@@ -23,7 +24,6 @@ function Movies() {
                }
             </Content>
         </Container>
-
     )
 }
 
@@ -38,6 +38,9 @@ const Content = styled.div`
     grid-template-columns: repeat(4,minmax(0, 1fr));
     grid-gap: 25px;    
 
+    @media(max-width: 760px){
+        grid-template-columns: repeat(2,minmax(0, 1fr));
+    }
 `
 const Wrap  = styled.div`
     border-radius: 10px;
@@ -61,5 +64,7 @@ const Wrap  = styled.div`
         box-shadow: rgba(0 0 0 / 80%) 0px 40px 58px -16px,
                     rgba(0 0 0 / 72%) 0px 30px 22px  -10px;
     }
+
+    
 
 `

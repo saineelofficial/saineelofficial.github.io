@@ -61,6 +61,36 @@ function Header() {
 
     return (
         <Nav>
+            <MenuContainer>
+                <Menu src= "/images/bars-solid.svg" alt="menu-icon" />
+                <MenuItems>
+                            <a>
+                                <img src='/images/home-icon.svg' />
+                                <span>HOME</span>
+                            </a>
+                            <a>
+                                <img src='/images/search-icon.svg' />
+                                <span>SEARCH</span>
+                            </a>
+                            <a>
+                                <img src='/images/watchlist-icon.svg' />
+                                <span>WATCHLIST</span>
+                            </a>
+                            <a>
+                                <img src='/images/original-icon.svg' />
+                                <span>ORIGINALS</span>
+                            </a>
+                            <a>
+                                <img src='/images/movie-icon.svg' />
+                                <span>MOVIES</span>
+                            </a>
+                            <a>
+                                <img src='/images/series-icon.svg' />
+                                <span>SERIES</span>
+                            </a>
+                        </MenuItems>
+            </MenuContainer>
+            
             <Logo src='/images/logo.svg' />
             {
                 !userName ? (
@@ -109,12 +139,21 @@ function Header() {
 
 export default Header
 
+
+
+
 const Nav = styled.nav`
     height: 70px;
     background: #090b13;
     display: flex;
     align-items: center;
     padding: 0 34px;
+    @media(max-width:894px){
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+
 `
 const Logo = styled.img`
     width: 80px;
@@ -167,13 +206,72 @@ const NavMenu = styled.div`
         }
     }
 
+    @media(max-width:894px){
+        display:none;
+    }
 `
+const MenuItems = styled(NavMenu)`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top:60px;
+    opacity:0;
+    left:-26px;
+    box-shadow: rgba(0 0 0 / 69%) 0px 26px 30px -10px,
+                 rgba(0 0 0 / 73%) 0px 16px 10px -10px;
+    border-radius: 4px;
+    background: rgba(0 0 0 / 50%);
+    z-index:-2;
+    transition: all 200ms ease-out;
+    a{
+        margin:10px 16px;
+        img{
+            height: 22.5px;
+            padding:0 2px;
+        }
+        span{
+            font-size:14px;
+        }
+    }
+`
+const Menu = styled.img`
+    
+    
+`
+const MenuContainer = styled.div`
+display: none;
+    @media(max-width:894px)
+    {
+        display:flex;
+        align-items:center; 
+        color:white;
+        height:34px;
+        width:34px;
+        cursor:pointer;
+        ${Menu}{
+            height:100%;
+            width:100%;
+            object-fit:contain;
+        }
+    }
+    &:hover{
+        ${MenuItems}
+        {
+            opacity:1;
+            z-index:1;
+            transform-origin: top center
+        }
+    }
 
+
+`
 const UserImg = styled.img`
     width: 48px;
     height: 48px;
     border-radius: 50%;
     cursor: pointer; 
+    
 `
 const Login = styled.div`
     border: 2px solid #f9f9f9;
@@ -188,10 +286,17 @@ const Login = styled.div`
         color: #000;
         border-color: transparent;
     }
+    @media(max-width:894px){
+        padding: 7px 12px;
+        font-size:14px;
+    }
 `
 
 const LoginContainer = styled.div`
     flex:1;
     display: flex;
     justify-content: flex-end;
+    @media(max-width:894px){
+        flex:none;
+    }
 `
