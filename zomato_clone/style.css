@@ -191,7 +191,7 @@ footer{
     filter: brightness(0%) invert(100%) 
 }
 .list{
-    width: 160px;
+    width: max-content;
     margin: 0 auto;
 }
 .items{
@@ -278,7 +278,7 @@ footer{
         height: 200px;
    }
     .list{
-        width: 200px;
+        width: max-content;
         margin-top: 55px;
    }
     .items{
