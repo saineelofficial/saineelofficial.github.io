@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;500&family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="./images/hashhash.svg" sizes="16x16">
+    <link rel="icon" href="./images/hashhash.svg" sizes='32x32'>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
 <body>
+    
     <!-- Navigation Bar -->
 
     <div class="navigation">
@@ -27,9 +28,9 @@
             <span class="logo-img">
                 <img src="./images/hashhash.svg" alt="logoImage">
             </span>
-            <h2 class="title" style="font-family: 'Work Sans', sans-serif;">
-                <span id="flip">Flip</span>Health
-            </h2>
+            <h5 class="title" style="font-family: 'Work Sans', sans-serif;">
+                <span id="flip">Flip</span><span class="health">Health</span>
+            </h5>
         </div>
     </div>
 
@@ -37,24 +38,23 @@
 
     <div class="hero-section">
         <div class="col-1">
-            <h2 class="heading">
-                Family doctor,<span>in your pocket.</span>
-            </h2>
+            <h5 class="heading">
+                Family doctor,<span>in your pocket.</span></h5>
             <p class="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi voluptates odio, enim alias laudantium nihil quam voluptate saepe? Exercitationem.
             </p>
             <div class="special">
                 <div class="special-items">
-                    <i class="fas fa-stethoscope"></i>
+                    <img src="./images/stethoscope.svg" alt="">
                     <p class="detail">24/7 access to doctors</p>
                 </div>
                 <div class="special-items">
-                    <i class="fas fa-user-md"></i>
+                    <img src="./images/user.svg" alt="">
                     <p class="detail">Unlimited Consultants</p>
                 </div>
                 <div class="special-items">
-                    <i class="fas fa-brain"></i>
-                    <p class="detail">Smart AI Symptom check</p>
+                    <img src="./images/brain-solid.svg" alt="brain image">
+                    <p class="detail">Smart AI Symptoms check</p>
                 </div>
             </div>
             <button class="main-btn">Download App</button>
@@ -65,7 +65,7 @@
             <div class="price">
                 <p><span class="just">For just</span>
                     <span class="cost">
-                        <i class="fas fa-rupee-sign"></i>1200/-
+                        &#8377;1200/-
                     </span>
                     <span class="year">per year</span>
                 </p>
@@ -77,32 +77,32 @@
 
     <div class="info">
         <div class="col-1">
-            <h2 class="head">
+            <h5 class="head">
                 Helping users at
                 <span class="first">the first sign of symptoms</span>
-            </h2>
+            </h5>
             <div class="ai-info">
                 <p>AI Physician is the ideal tool to assist users in preliminary diagnosis.</p>
                 <p>Using AI to diagnose, it then guides users to appropriate care.</p>
             </div>
             <ul class="points">
-                <li><span id="list-image"><svg width="582" height="527" viewBox="0 0 582 527" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#fff"/>
+                <li><span id="list-image"><svg width="582" height="527" viewBox="0 0 582 527" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#fff"></path>
                     </svg>
 </span>Minimize over and under triage</li>
                 <li><span id="list-image"><svg width="582" height="527" viewBox="0 0 582 527" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#fff"/>
+                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#fff"></path>
                     </svg>
 </span>Prevent unnecessary hospital visits</li>
                 <li><span id="list-image"><svg width="582" height="527" viewBox="0 0 582 527" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#fff"/>
+                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#fff"></path>
                     </svg>
 </span>Treat through teleconsultations</li>
             </ul>
             <button class="main-btn">Getting Started</button>
         </div>
         <svg width="582" height="527" viewBox="0 0 582 527" fill="none" xmlns="http://www.w3.org/2000/svg" class="hash">
-            <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#7C95A3"/>
+            <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#7C95A3"></path>
             </svg>
         <img src="./images/Helping users at the first-SCREENSHOT.png" alt="app" class="help">
     </div>
@@ -122,15 +122,15 @@
             </div>
             <ul class="des-points">
                 <li><span id="list-image"><svg width="582" height="527" viewBox="0 0 582 527" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#7C95A3"/>
+                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#7C95A3"></path>
                     </svg>
 </span>Acess to unlimited online doctor consultations including specalists.</li>
                 <li><span id="list-image"><svg width="582" height="527" viewBox="0 0 582 527" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#7C95A3"/>
+                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#7C95A3"></path>
                     </svg>
 </span>Our pharmacists are just a chat away to clear doubts.</li>
                 <li><span id="list-image"><svg width="582" height="527" viewBox="0 0 582 527" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#7C95A3"/>
+                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#7C95A3"></path>
                     </svg>
 </span>We offer free lab tests when suggested by doctors.</li>
             </ul>
@@ -139,7 +139,7 @@
             <div class="card-img">
                 <img src="./images/Fitness & Nutrition Support.png" alt="" width="443" height="435">
             </div>
-            <div class="card-title">Fitness &
+            <div class="card-title fit">Fitness &
                 <span>Nutrition Support</span>
             </div>
             <div class="card-description">
@@ -147,15 +147,15 @@
             </div>
             <ul class="des-points mg">
                 <li><span id="list-image"><svg width="582" height="527" viewBox="0 0 582 527" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#7C95A3"/>
+                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#7C95A3"></path>
                     </svg>
 </span>Custom workout plans from trainers.</li>
                 <li><span id="list-image"><svg width="582" height="527" viewBox="0 0 582 527" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#7C95A3"/>
+                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#7C95A3"></path>
                     </svg>
 </span>Tailored meal plan depending on BMI.</li>
                 <li><span id="list-image"><svg width="582" height="527" viewBox="0 0 582 527" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#7C95A3"/>
+                    <path d="M0 214.515V146.661H155.47V2L241.368 0V216.746L340.632 217.746V0H426.53V146.661H582V214.515H426.53V311.354H582V389.208H426.53V527H340.632V297.6H241.368V527H155.47V389.208H0V311.354H155.47V214.515H0Z" fill="#7C95A3"></path>
                     </svg>
 </span>Excellent support from nutritionists.</li>
             </ul>
@@ -167,14 +167,14 @@
 
     <div class="review">
         <div class="review-title">
-            <h2>What our users says!</h2>
+            <h5>What our users says!</h5>
         </div>
-        <div class="owl-carousel owl-theme carousel">
-            <div class="comment">
+        <div class="owl-carousel owl-theme owl-loaded carousel">
+            <div class="comment ">
                 <div class="profile-pic">
                     <img src="./images/Review Profile Pics/pic-1.jpeg" alt="review-1">
                 </div>
-                <div class="feedback">"Getting medical care through Flip Health was most convenient and comprehensive health experience I've had in quiet a while. I feel comfortable using Galileo for the majority of my health needs"</div>
+                <div class="feedback">"Getting medical care through Flip Health was most convenient and comprehensive health experience I've had in quiet a while."</div>
                 <span class="user">- Ellena K</span>
             </div>
             <div class="comment">
@@ -189,7 +189,7 @@
                     <img src="./images/Review Profile Pics/pic-3.jpeg" alt="pic-2">
                 </div>
                 <div class="feedback">
-                    "Great experience. Doctor answered quickly, solved issues, asked many questions to understand my case. Among doctors this is difficult to find - patience to listen to earlier history. So thanks. Very happy."
+                    "Great experience. Doctor answered quickly, solved issues, asked many questions to understand my case. Very happy."
                 </div>
                 <span class="user">- Kendel Shaw</span>
             </div>
@@ -198,7 +198,7 @@
                     <img src="./images/Review Profile Pics/pic-4.jpeg" alt="pic-2">
                 </div>
                 <div class="feedback">
-                    "I can,t believe I'm writing a review. Have to admit I'm totally impressed. Great app. Docters are kind, freindly, listens wth patience. Diagnosed properly, made me understand and focused on lifestyle changes as opposed to the easy option of giving strong meds. Thanks!"
+                    "I can,t believe I'm writing a review. Have to admit I'm totally impressed. Great app. Docters are kind, freindly, listens wth patience."
                 </div>
                 <span class="user">- Mathew</span>
             </div>
@@ -207,7 +207,7 @@
                     <img src="./images/Review Profile Pics/pic-5.jpeg" alt="pic-2">
                 </div>
                 <div class="feedback">
-                    "Best App for consultation and most effective way to connect with doctors from anywhere. The doctor replies with great detail and is extremely polite. One can also come back to consult the same doctor anytime. Highly recommended!"
+                    "Best App for consultation and most effective way to connect with doctors from anywhere. Highly recommended!"
                 </div>
                 <span class="user">- Olivia</span>
             </div>
@@ -215,8 +215,8 @@
                 <div class="profile-pic">
                     <img src="./images/Review Profile Pics/pic-6.jpeg" alt="pic-2">
                 </div>
-                <div class="feedback">
-                    "Simple and useful application to connect doctors from our convenience. It is quite indispenable tool during this lockdown situation, Had wonderful experience talking to doctor about my lifestyle health challenges got great counseling with doctor."
+                <div class="feedback mb">
+                    "Simple and useful application to connect doctors from our convenience. It is quite indispenable tool."
                 </div>
                 <span class="user">- Ben Taylor</span>
             </div>
@@ -224,7 +224,7 @@
                 <div class="profile-pic">
                     <img src="./images/Review Profile Pics/pic-7.jpeg" alt="pic-2">
                 </div>
-                <div class="feedback">
+                <div class="feedback mb">
                     "I've been suprised at how responsive and thoughtful th Flip Health doctors have been so far. It's hard for me to see going back to a traditional practice"
                 </div>
                 <span class="user">- Andrew</span>
@@ -280,7 +280,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <script type="text/javascript" src="./script.js"></script>
+    
 </body>
 </html>
