@@ -1,7 +1,7 @@
 
     
 $(document).ready(function(){
-    let match = window.matchMedia('(max-width:425px)')
+    let match = window.matchMedia('(max-width:430px)')
     $(".owl-carousel").owlCarousel({
         items: match.matches? 1 : 2,
         loop:true,
