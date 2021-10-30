@@ -1,12 +1,14 @@
 *{
     margin: 0;
-    box-sizing: border-box;
     padding:0;
+    box-sizing: border-box;
 }
+
 body{
     font-family: 'Roboto', sans-serif;
-
+    
 }
+
 .navigation{
     display: flex;
     justify-content: space-between;
@@ -445,23 +447,4 @@ font-size: 17px;
 .company > ul li:hover:not(:first-child){
     color:rgb(255, 255, 255);
     cursor: pointer;
-}
-.owl-prev{
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    left:-100px;
-    height: 140px;
-   
-}
-.owl-prev span{
-    
-    font-size: 30px;
-    text-align: center;
-    padding: 30px 20px 30px;
-
-
-}
-.owl-prev:hover{
-    color: red;
 }
