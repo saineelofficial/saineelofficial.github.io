@@ -195,16 +195,14 @@
     }
     .footer{
         padding:60px 23px 30px;
-        text-align: center;
     }
     .footer-des
     {
         width: 100%;
     }
     .company{
-        flex-direction: column;
-        justify-content: center;
-        align-items:center;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap:30px;
         margin-bottom: 40px;
     }
