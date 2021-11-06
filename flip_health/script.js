@@ -1,5 +1,5 @@
 
-    
+
 $(document).ready(function(){
     let match = window.matchMedia('(max-width:430px)')
     $(".owl-carousel").owlCarousel({
@@ -13,7 +13,7 @@ $(document).ready(function(){
     });
 });
 let button = document.querySelector('.subscribe')
-let input = document.querySelector('.tips-input input')
+let input = document.querySelector('.email')
 button.addEventListener('click',()=>
 {
     input.value = ''
