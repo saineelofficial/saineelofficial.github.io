@@ -1,0 +1,20 @@
+
+
+$(document).ready(function(){
+    let match = window.matchMedia('(max-width:430px)')
+    $(".owl-carousel").owlCarousel({
+        items: match.matches? 1 : 2,
+        loop:true,
+        dots:true,
+        margin:60,
+        autoplay:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:true
+    });
+});
+let button = document.querySelector('.subscribe')
+let input = document.querySelector('.email')
+button.addEventListener('click',()=>
+{
+    input.value = ''
+})
