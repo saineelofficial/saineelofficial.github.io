@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	overflow: hidden;
+	background-color: #8ee4aF;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+form {
+	display: grid;
+	grid-template-areas: "input input input input""clear clear minus cross""seven eight nine divide""four five six plus""one two three plus""zero dot equal equal";
+	justify-items: space-around;
+	gap: 19px;
+}
+.container {
+	background-color: #091921;
+	padding: 14px;
+	box-shadow: 0px 10px 25px rgba(0 0 0 / 90%);
+	border-radius: 8px;
+	overflow: hidden;
+}
+#display {
+	grid-area: input;
+	height: 150px;
+	font-size: 30px;
+	text-align: right;
+	background-color: #091921;
+	padding-right: 10px;
+	color: white;
+	font-weight: 400;
+	letter-spacing: 2px;
+	border: none;
+}
+span {
+	transition: all 200ms ease-in-out;
+	padding: 20px;
+	font-size: 20px;
+	border: none;
+	display: grid;
+	border-radius: 50%;
+	place-items: center;
+	background-color: #e0e6d7;
+	cursor: pointer;
+	box-shadow: 0px 3px 10px rgba(255 255 255 / 40%);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+span:hover,
+span:focus {
+	background-color: rgb(196, 193, 193)
+}
+.one {
+	grid-area: one;
+}
+.two {
+	grid-area: two;
+}
+.three {
+	grid-area: three;
+}
+.four {
+	grid-area: four;
+}
+.five {
+	grid-area: five;
+}
+.six {
+	grid-area: six;
+}
+.seven {
+	grid-area: seven;
+}
+.eight {
+	grid-area: eight;
+}
+.nine {
+	grid-area: nine;
+}
+.zero {
+	grid-area: zero;
+}
+.plus {
+	grid-area: plus;
+	height: 100%;
+	border-radius: 13px
+}
+.minus {
+	grid-area: minus;
+}
+.cross {
+	grid-area: cross;
+}
+.divide {
+	grid-area: divide;
+}
+.dot {
+	grid-area: dot;
+}
+.clear {
+	grid-area: clear;
+	width: 100%;
+	background-color: #e23232;
+	box-shadow: 0px 5px 15px #e23232;
+	border-radius: 13px;
+	transition: all 200ms ease-in-out
+}
+.clear:hover {
+	background-color: #c71313;
+}
+.clear:active,
+.equal:active {
+	transform: translateY(1px);
+}
+.equal {
+	grid-area: equal;
+	width: 100%;
+	border-radius: 13px;
+	background-color: #4285F4;
+	box-shadow: 2px 2px 15px #4285F4;
+	transition: all 200ms ease-in-out;
+}
+.equal:hover {
+	background-color: #3375e0
+}
+.nodata {
+	background-color: lightblue;
+	color: grey;
+	cursor: not-allowed;
+	pointer-events: none
+}
